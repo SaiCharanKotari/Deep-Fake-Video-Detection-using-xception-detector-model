@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Project</title>
+    <link rel="stylesheet" href="/static/main.css" />
+</head>
+<body>
+    <img src="/static/bg.jpg" alt="background" class="background" />
+    <div class="title">
+        <h1>Deepfake Detection Using Xception Model</h1>
+    </div>
+    <div class="controls">
+        <input type="file" id="videoFile" name="video" accept="video/*">
+        <button class="upload" onclick="upload()" type="button">Upload</button>
+        <button class="run" onclick="run()" type="button">Run Detector</button>
+    </div>
+    <div id="result" class="result"></div>
+    <pre id="csvOutput"></pre>
+    <script src="/static/main.js"></script>
+</body>
+</html>
